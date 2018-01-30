@@ -7,3 +7,14 @@
     <li i18n>Snake</li>
   </ul>
 </div>
+
+<div>
+
+<template ngFor let-lang [ngForOf]="languages" class="button button-primary">
+  <span *ngIf="lang.code !== localeId">
+    <a href="/{{lang.code}}/">{{lang.label}}</a>
+  </span>
+  <span *ngIf="lang.code === localeId">{{lang.label}} </span>
+</template>
+</div>
+

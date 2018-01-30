@@ -15,3 +15,7 @@ app.get('/' || 'en', function(req, res) {
 app.get('/de', function(req, res) {
 	res.sendFile(path.join(__dirname + '/dist/de/index.html'));
 });
+
+app.get('/es', function(req, res) {
+	res.sendFile(path.join(__dirname + '/dist/es/index.html'));
+});
