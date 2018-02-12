@@ -13,5 +13,14 @@ export class AppComponent {
   { code: 'es', label: 'Español'}
   ];
 
+  test = 'hola amigos';
+
+  plurals = [
+  { value: 0, viewValue:'0'},
+  { value: 1, viewValue:'1'},
+  { value: 2, viewValue: '2'},
+  { value: 10, viewValue: '10'}
+  ];
+
   constructor(@Inject(LOCALE_ID) protected localeId: string) {}
 }

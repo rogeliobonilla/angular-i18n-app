@@ -1,20 +1,62 @@
-<div>
-  <h1 i18n="site header">Animals of the world</h1>
-  <ul>
-    <li i18n>Dragon</li>
-    <li i18n>Tiger</li>
-    <li i18n>Monkey</li>
-    <li i18n>Snake</li>
-  </ul>
-</div>
+<div class="header">
+    <div class="info">
+      <div class="nav">
+        <a class="button button-primary" href="">Home</a>
+        <a class="button" href="">About</a>
+        <a class="button" href="">Contact</a>
+      </div>
+      <div class="cta">
+        <h2>Domo Globalization team</h2>
+        <h3>International growth.</h3>
+        <a class="button button-primary" href="">Learn more</a>
+      </div>
+    </div>
+  </div>
 
-<div>
+  <div class="info-boxes">
+    <h3>Common localization problems</h3>
+    <div class="boxes">
+      <div>
+        <img src="assets/totoro.jpeg">
+        <h5>Plurals</h5>
+        <div>
+          <!--plurals text here -->
+          <mat-form-field>
+            <mat-select placeholder="Number of items">
+              <mat-option **ngFor="let number of plurals" [value]="number.value">{{ number.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
 
-<ng-template ngFor let-lang [ngForOf]="languages" class="button button-primary">
+          <p>{{test}}</p>
+        </div>
+        <a class="button" href="">Learn more</a>
+      </div>
+      <div>
+        <img src="assets/totoro.jpeg">
+        <h5>Gender</h5>
+        <!-- gender text here -->
+        <a class="button" href="">Learn more</a>
+      </div>
+      <div>
+        <img src="assets/totoro.jpeg">
+        <h5>Date formats</h5>
+        <!-- date formats text here -->
+        <a class="button" href="">Learn more</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-area">
+    <p>Copyright © 2018 Domo, Inc.</p>
+  </div>
+
+
+
+<ng-template ngFor let-lang [ngForOf]="languages">
   <span *ngIf="lang.code !== localeId">
-    <a href="/{{lang.code}}/">{{lang.label}}</a>
+    <a href="/{{lang.code}}/" class="button">{{lang.label}}</a>
   </span>
   <span *ngIf="lang.code === localeId">{{lang.label}} </span>
 </ng-template>
-</div>
 

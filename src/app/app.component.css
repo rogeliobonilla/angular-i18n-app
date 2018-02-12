@@ -1,0 +1,57 @@
+.header {
+	padding: 0;
+	display: block;
+	background-image: url('../assets/city.jpg');
+	min-height: 20px;
+}
+
+.info {
+padding: 2em;
+margin: 0 auto;
+display: block;
+max-width: 760px;
+
+}
+
+.nav {
+justify-content: space-between;
+display: flex;
+flex-flow: row wrap;
+box-sizing: border-box;
+padding: 10px;
+padding-top: 5px;
+}
+
+.nav a {
+	width: 25%;
+}
+
+.cta {
+	display: block;
+	box-sizing: border-box;
+	padding-top: 2em;
+	text-align: center;
+}
+
+.info-boxes {
+	margin-top: 3em;
+	text-align: center;
+}
+
+.boxes {
+	padding: 5em;
+	display: flex;
+	max-width: 950px;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-bottom: 80px;
+}
+
+.footer-area {
+	padding: 5em;
+	text-align: center;
+	bottom: 0;
+	height: 20px;
+	margin-top: 50px;
+}
