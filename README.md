@@ -1,6 +1,9 @@
-# I18nApp
+# I18nSampleApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0. It's a simple app that shows how to do internationalization on Angular. This app is available in English, German, and Spanish.
+
+# Build i18n app
+Run `npm run build-i18n`. This creates all the language bundles the app needs. After the bundles are created, run `node server.js` and go to `http://localhost:3000`.
 
 ## Development server
 
